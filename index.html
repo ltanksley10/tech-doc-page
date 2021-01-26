@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>JavaScript Notes</header>
+            <ul>
+                <li><a href="#Intro_to_Loops" class="nav-link">Intro to Loops</a></li>
+                <li><a href="#For_Loop" class="nav-link">For Loop</a></li>
+                <li><a href="#For_in_Loop" class="nav-link">For in Loop</a></li>
+                <li><a href="#For_of_Loop" class="nav-link">For of Loop</a></li>
+                <li><a href="#While_Loop" class="nav-link">While Loop</a></li>
+                <li><a href="#Do_while_Loop" class="nav-link">Do while Loop</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Intro_to_Loops">
+                <header>Intro to Loops</header>
+                <article>
+                    <p>One very common thing you will find in JavaScript is a loop. Loops are used for condition based tasks when you 
+                    may need to loop through them multiple times to find the condition.</p>
+                    <p>As long as the condition is true, a loop will 
+                    continue to run. Listed below are the most common forms of loops you will see.</p>
+                </article>
+            </section>
+            <section class="main-section" id="For_Loop">
+                <header>For Loop</header>
+                <article>
+                    <p>These types of loops are commonly used to iterate over an array multiple times. For loops consist of three expressions
+                    and a statement:</p>
+                    <ul>
+                        <li>initialization: this is run before the first execution of the loop and is typically used to create counters</li>
+                        <li>condition: an expression that gets checked prior to the execution of each iteration(checking whether true or false)</li>
+                        <li>final-expression: the expression that gets run after each iteration, usually used to increment or decrement a counter</li>
+                        <li>statement: the code to be repeated in the loop</li>
+                    </ul>
+                    <p>Any of these three expressions or the statement can be ommitted if needed.</p>
+                    <code>Example: for (let i = 0; i < arr.length; i++) { //statement };</code>
+                    <p>To avoid exceeding the bounds of the array when indexing over it either set the condition to
+                    i < arr.length or i <= arr.length - 1.</p>
+                </article>
+            </section>
+            <section class="main-section" id="For_in_Loop">
+                <header>For in Loop</header>
+                <article>
+                    <p>This loop statement iterates over enumerable properties of an object in random order.</p>
+                    <code>Example: for (var a in b) { //statement };</code>
+                </article>
+            </section>
+            <section class="main-section" id="For_of_Loop">
+                <header>For of Loop</header>
+                <article>
+                    <p>This statement creates a loop that iterates over iterable objects, which invokes a custom hook
+                    with statements to be executed for the value of each property.</p>
+                    <code>Example: for (var of object) { //statement };</code>
+                    <p>Iterable objects:</p>
+                    <ul>
+                        <li>Arrays</li>
+                        <li>Map</li>
+                        <li>Set</li>
+                        <li>Arguments</li>
+                        <li>etc..</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="While_Loop">
+                <header>While Loop</header>
+                <article>
+                    <p>The while loop first evaluates the condition. If the condition is true the statements are then 
+                    executed. If the condition is false the statements are not executed and the loop ends.</p>
+                    <code>Example: while(condition) { //statement(s) };</code>
+                </article>
+            </section>
+            <section class="main-section" id="Do_while_Loop">
+                <header>Do while Loop</header>
+                <article>
+                    <p>The do while loop is similar to the while loop. However, in the do while loop the condition is 
+                    checked at the end of the loop.</p>
+                    <code>Example: do { //statement(s); } while (condition);</code>
+                    <p>How to iterate with Do..While Loops:</p>
+                    <code>var myArray = []; var i = 10; do { myArray.push(i); i++; } while(i <= 10);</code>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
